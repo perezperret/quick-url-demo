@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "yarn && parcel build index.html && cp _redirects dist/_redirects"
+    "build": "yarn && parcel build index.html"
   },
   "repository": "https://github.com/perezperret/quick-url-demo",
   "author": "Santiago Perez Perret <perezperret@gmail.com>",
