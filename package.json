@@ -1,0 +1,21 @@
+{
+  "name": "quick-url-demo",
+  "version": "0.0.2",
+  "description": "Demo for the quick-url library",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "yarn && parcel build index.html && cp _redirects dist/_redirects"
+  },
+  "repository": "https://github.com/perezperret/quick-url-demo",
+  "author": "Santiago Perez Perret <perezperret@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "quick-url": "^0.0.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  }
+}
