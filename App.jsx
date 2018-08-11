@@ -1,6 +1,7 @@
 import React from 'react'
 import qUrl from 'quick-url'
 
+import Header from './components/Header'
 import UrlInput from './components/UrlInput'
 import ParsedUrlInput from './components/ParsedUrlInput'
 
@@ -41,19 +42,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="header">
-          <h1>quick-url-demo</h1>
-        </div>
-        <div>
-          <h2>URL</h2>
+        <Header />
+        <div className="content">
           <UrlInput
             url={this.state.url}
             onParseUrl={this.parseUrl}
             onInputChange={this.onInputChange}
           />
-        </div>
-        <div>
-          <h2>Parsed URL</h2>
           <ParsedUrlInput
             parsedUrl={this.state.parsedUrl}
             onBuildUrl={this.buildUrl}
