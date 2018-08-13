@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   parseUrl() {
-    const parsedUrl = JSON.stringify(qUrl.parseUrl(this.state.url))
+    const parsedUrl = JSON.stringify(qUrl.parseUrl(this.state.url), null, 2)
     this.setState({ parsedUrl })
   }
 
